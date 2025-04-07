@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscriçãos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section id="inscricao">
+            <div class="container">
+                <h2>Inscreva-se Agora</h2>
+                <p>Preencha o formulário abaixo para iniciar sua jornada no aprendizado de um novo idioma!</p>
+                <form id="form-inscricao">
+                    <input type="text" name="nome" placeholder="Nome Completo" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="tel" name="telefone" placeholder="Número de Telefone" required>
+                    <input type="text" name="CEP" placeholder="CEP" required>
+                    
+                    <select name="pagamento" id="pagamento" required>
+                        <option value="" disabled selected>Forma de Pagamento</option>
+                        <option value="pix">Pix</option>
+                        <option value="cartao_debito">Cartão de Débito</option>
+                        <option value="cartao_credito">Cartão de Crédito</option>
+                        <option value="boleto">Boleto</option> 
+                    </select>
+
+                    <button type="submit" class="btn">Inscrever-se</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <a href="index.html"><h2>Voltar</h2> </a> 
+    </main>
+
+    <script>
+        document.getElementById('form-inscricao').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+            
+            // Obter o valor da forma de pagamento selecionada
+            const pagamento = document.getElementById('pagamento').value;
+
+            // Verifica qual forma de pagamento foi escolhida
+            if (pagamento === 'pix') {
+                // Redireciona para a página do Pix
+                window.location.href = "area pix.html"; // Substitua pelo caminho correto da página Pix
+            } else {
+                // Redireciona para a página de cadastro normal
+                window.location.href = "cadastro.html"; // Certifique-se de que o arquivo 'cadastro.html' está no mesmo diretório
+            }
+        });
+    </script>
+</body>
+</html>

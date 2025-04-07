@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários de Aula - Curso de Idiomas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .schedule-table button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .schedule-table button:hover {
+            background-color: #45a049;
+        }
+
+        .schedule-table th, .schedule-table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    
+    <main>
+        <div class="schedule-container">
+            <h2>Confira os horários das aulas dos nossos cursos</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Idioma</th>
+                        <th>Segunda-feira</th>
+                        <th>Quarta-feira</th>
+                        <th>Sexta-feira</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inglês</td>
+                        <td><button onclick="redirecionar('ingles-segunda.html')">09:00 - 10:30</button></td>
+                        <td><button onclick="redirecionar('ingles-quarta.html')">14:00 - 15:30</button></td>
+                        <td><button onclick="redirecionar('ingles-sexta.html')">18:00 - 19:30</button></td>
+                    </tr>
+                    <tr>
+                        <td>Espanhol</td>
+                        <td><button onclick="redirecionar('espanhol-segunda.html')">10:30 - 12:00</button></td>
+                        <td><button onclick="redirecionar('espanhol-quarta.html')">15:30 - 17:00</button></td>
+                        <td><button onclick="redirecionar('espanhol-sexta.html')">19:30 - 21:00</button></td>
+                    </tr>
+                    <tr>
+                        <td>Francês</td>
+                        <td><button onclick="redirecionar('frances-segunda.html')">08:00 - 09:30</button></td>
+                        <td><button onclick="redirecionar('frances-quarta.html')">13:00 - 14:30</button></td>
+                        <td><button onclick="redirecionar('frances-sexta.html')">17:00 - 18:30</button></td>
+                    </tr>
+                    <tr>
+                        <td>Alemão</td>
+                        <td><button onclick="redirecionar('aleman-segunda.html')">11:00 - 12:30</button></td>
+                        <td><button onclick="redirecionar('aleman-quarta.html')">16:00 - 17:30</button></td>
+                        <td><button onclick="redirecionar('aleman-sexta.html')">20:00 - 21:30</button></td>
+                    </tr>
+                    <tr>
+                        <td>Italiano</td>
+                        <td><button onclick="redirecionar('italiano-segunda.html')">09:30 - 11:00</button></td>
+                        <td><button onclick="redirecionar('italiano-quarta.html')">14:30 - 16:00</button></td>
+                        <td><button onclick="redirecionar('italiano-sexta.html')">18:30 - 20:00</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="index.html"><h2>Voltar</h2></a>
+    </main>
+
+    <script>
+        function redirecionar(pagina) {
+            window.location.href = "inscrição.html";
+        }
+    </script>
+
+</body>
+</html>

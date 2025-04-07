@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Linguística</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link para o CSS -->
+
+
+    
+    
+    <head>
+        <!-- Favicon para a aba do navegador -->
+        <link rel="icon" href="imagem/logo.jpg" type="image/x-icon">
+        
+        <!-- Favicon em outros formatos (opcional, mas recomendado para compatibilidade em diferentes dispositivos) -->
+        <link rel="icon" href="imagem/logo.jpg" type="image/png">
+        <link rel="apple-touch-icon" href="imagem/logo.jpg">
+        
+        <meta name="theme-color" content="#ffffff"> <!-- Cor da barra de endereço (opcional) -->
+        
+        <!-- Outras tags do cabeçalho -->
+
+
+        <style>
+
+            /* Animação para a mensagem de boas-vindas */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Move o texto para baixo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Retorna à posição original */
+    }
+}
+
+/* Aplicando a animação na mensagem de boas-vindas */
+.hero-section .content {
+    opacity: 0; /* Invisível no início */
+    animation: slideInUp 1.5s ease-out forwards;
+}
+
+
+             p {
+            color: white;
+        }
+
+            /* Definindo a animação de entrada */
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px); /* Move ligeiramente para baixo */
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0); /* Retorna à posição original */
+                }
+            }
+            
+            /* Aplicando a animação aos cards */
+            .flex-container .card {
+                opacity: 0; /* Invisível no início */
+                animation: fadeIn 1s ease-out forwards;
+            }
+            
+            /* Definir um atraso para cada card para criar um efeito em cascata */
+            .flex-container .card:nth-child(1) {
+                animation-delay: 0.2s;
+            }
+            .flex-container .card:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+            .flex-container .card:nth-child(3) {
+                animation-delay: 0.2s;
+            }
+            .flex-container .card:nth-child(4) {
+                animation-delay: 0.2s;
+            }
+            .flex-container .card:nth-child(5) {
+                animation-delay: 0.2s;
+            }
+
+
+            
+
+
+
+           /* Animação para a mensagem de boas-vindas */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px); /* Move o texto para baixo */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Retorna à posição original */
+            }
+        }
+
+        /* Ajustando a seção de boas-vindas */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(45deg, #e9d8b8, #d4b890, #c9a97a, #e0c680, #bfa678);
+            background-size: 200% 200%;
+            animation: gradientBackground 8s ease infinite;
+            height: 60vh; /* Reduzindo ainda mais a altura */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .hero-section .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 70%; /* Tornando o texto mais centralizado e restrito */
+            margin: 0 auto; /* Centralizando horizontalmente */
+            opacity: 0;
+            animation: slideInUp 1.5s ease-out forwards;
+        }
+
+        .hero-section h2 {
+            font-size: 4rem; /* Reduzindo o tamanho da fonte */
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem; /* Reduzindo o tamanho do texto */
+            line-height: 2.4;
+            margin-bottom: 2rem;
+        }
+
+        .hero-section .btn {
+            padding: 9px 17px; /* Ajustando o tamanho do botão */
+            background-color: #ffd700;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-section .btn:hover {
+            background-color: #ffc107;
+        }
+
+        @keyframes gradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+            </style>
+            
+        
+      </head>
+      
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 style="font-size: 50px;">Conexão Linguística</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="idiomas ofericidos.html">Informações</a></li>
+                    <li><a href="sobre nós.html">Sobre Nós</a></li>                                     
+                    <li><a href="depoimento.html">Depoimentos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="overlay">
+                <div class="content">
+                    <h2>Bem-vindo à Conexão Linguística</h2>
+                    <p>Estamos felizes em tê-lo conosco em nossa jornada para aprender novos idiomas e expandir horizontes. Aqui, você encontrará cursos de alta qualidade, com materiais atualizados e professores experientes, prontos para ajudar você a dominar o idioma dos seus sonhos. Comece hoje mesmo e abra as portas para novas oportunidades!</p>
+                    <a href="idiomas ofericidos.html" class="btn">Ver Horários</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Idiomas Oferecidos -->
+        <section id="idiomas">
+            <div class="container">
+                <h2 style="color: rgb(37, 26, 4)">Nossos Idiomas</h2>
+                <div class="flex-container">
+                    <div class="card">
+                        <a href="escolha de horario/horario ingles.html"> <!-- Página de inscrição do curso de Inglês -->
+                            <img src="imagem/ingles.jpg" alt="Curso de Inglês" class="idioma-img">
+                            <h3 style="color: #fffffe;">Inglês</h3>
+                            <p></p>
+                            <p></p>
+                            <p><R1>R$200,00</R1></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="escolha de horario/horario espanhol.html"> <!-- Página de inscrição do curso de Francês -->
+                            <img src="imagem/espanha.jpg" alt="Curso de espanhol" class="idioma-img">
+                            <h3 style="color: #ffffff;">espanhol</h3>
+                            <p></p>
+                            <p></p>
+                            <p><R1>R$200,00</R1></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="escolha de horario/horario frances.html"> <!-- Página de inscrição do curso de Francês -->
+                            <img src="imagem/frança.jpg" alt="Curso de Francês" class="idioma-img">
+                            <h3 style="color: #ffffff;">Francês</h3>
+                            <p></p>
+                            <p></p>
+                            <p><R1>R$200,00</R1></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="escolha de horario/alemao.html"> <!-- Página de inscrição do curso de Alemão -->
+                            <img src="imagem/alemanha.jpeg" alt="Curso de Alemão" class="idioma-img">
+                            <h3 style="color: #ffffff;">Alemão</h3>
+                            <p></p>
+                            <p></p>
+                            <p><R1>R$200,00</R1></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="escolha de horario/italiano.html"> <!-- Página de inscrição do curso de Italiano -->
+                            <img src="imagem/italia.jpg" alt="Curso de Italiano" class="idioma-img">
+                            <h3 style="color: #ffffff;">Italiano</h3>
+                            <p></p>
+                            <p></p>
+                            <p><R1>R$200,00</R1></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Curso de Idiomas. Todos os direitos reservados.</p>
+            <p>Siga-nos nas redes sociais!</p>
+            <div class="social-icons">
+                <a href="https://www.bing.com/ck/a?!&&p=c3faeac5ec565b60193f9436db5e58e0ef5028adcfecaaf21f977d5059754c1dJmltdHM9MTczMDg1MTIwMA&ptn=3&ver=2&hsh=4&fclid=2eb92cd2-5a0c-60c7-15a3-381c5bbd619b&psq=facebook&u=a1aHR0cHM6Ly9wdC1ici5mYWNlYm9vay5jb20v&ntb=1"><img src="imagem/Face.png" alt="Facebook"></a>
+                <a href="https://www.bing.com/ck/a?!&&p=8073643e07eed2de2066900eb0ddbfc779fff9cfeb2901cd60de48400bfec7ebJmltdHM9MTczMDg1MTIwMA&ptn=3&ver=2&hsh=4&fclid=2eb92cd2-5a0c-60c7-15a3-381c5bbd619b&psq=instagran&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8_aGw9cHRfQlI&ntb=1"><img src="imagem/insta.png" alt="Instagram"></a>
+                <a href="https://www.bing.com/ck/a?!&&p=990b74d081d48a91bba82d119306d4068f7bab431d3a2e8e3d766e13f6e25355JmltdHM9MTczMDg1MTIwMA&ptn=3&ver=2&hsh=4&fclid=2eb92cd2-5a0c-60c7-15a3-381c5bbd619b&psq=x&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9fX3g&ntb=1"><img src="imagem/x.webp" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

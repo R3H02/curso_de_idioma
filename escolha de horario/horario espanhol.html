@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários de Aula - Curso de Idiomas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, #c60b1e, #ffc400, #c60b1e); /* Cores da bandeira da Espanha */
+            color: #333;
+        }
+
+        h2 {
+            margin-bottom: 60px;
+        }
+
+        /* Banner Animado */
+        .banner-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            height: 400px; /* Altura fixa */
+            overflow: hidden;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 30px;
+        }
+
+        .banner-images {
+            display: flex;
+            animation: slide 12s infinite;
+        }
+
+        .banner-item {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            text-align: center;
+        }
+
+        .banner-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            25% { transform: translateX(0%); }
+            33.33% { transform: translateX(-100%); }
+            58.33% { transform: translateX(-100%); }
+            66.66% { transform: translateX(-200%); }
+            91.66% { transform: translateX(-200%); }
+            100% { transform: translateX(0%); }
+        }
+
+        /* Texto motivador */
+        .motivational-text {
+            font-size: 1.2rem;
+            color: #000000;
+            margin-bottom: 30px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .motivational-text strong {
+            color: #d0021b; /* Vermelho escuro */
+        }
+
+        /* Centralização da tabela */
+        .schedule-container {
+            text-align: center;
+        }
+
+        .schedule-table {
+            margin: 20px auto; /* Centraliza horizontalmente */
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .schedule-table button {
+            padding: 10px 20px;
+            background-color: #c81c1c; /* Vermelho */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .schedule-table button:hover {
+            background-color: #b4001a;
+        }
+
+        .schedule-table th, .schedule-table td {
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #000000;
+            background-color: #ffe4a1; /* Amarelo claro */
+        }
+
+        a h2 {
+            color: #2b0005;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        a h2:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner com animação -->
+    <div class="banner-container">
+        <div class="banner-images">
+            <div class="banner-item">
+                <img src="../imagem/espa.jpg" alt="Explore a cultura da Espanha">
+            </div>
+            <div class="banner-item">
+                <img src="../imagem/estudo.jpg" alt="Aprender espanhol abre portas para o mundo!">
+            </div>
+            <div class="banner-item">
+                <img src="../imagem/aviao.jpg" alt="Descubra as maravilhas do idioma espanhol">
+            </div>
+        </div>
+    </div>
+
+    <!-- Texto motivador -->
+    <div class="motivational-text">
+        <p><strong>Descubra novas culturas!</strong> Com nossos cursos de espanhol, você estará preparado para se conectar com mais de 20 países no mundo hispânico. <strong>Aprenda hoje e viaje amanhã!</strong></p>
+    </div>
+
+    <!-- Tabela de horários -->
+    <main>
+        <div class="schedule-container">
+            <h2>Confira os horários das aulas dos nossos cursos</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Idioma</th>
+                        <th>Segunda-feira</th>
+                        <th>Quarta-feira</th>
+                        <th>Sexta-feira</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Espanhol</td>
+                        <td><button onclick="redirecionar('../inscrição.html')">09:00 - 10:30</button></td>
+                        <td><button onclick="redirecionar('../inscrição.html')">14:00 - 15:30</button></td>
+                        <td><button onclick="redirecionar('../inscrição.html')">18:00 - 19:30</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="../index.html"><h2>Voltar</h2></a>
+    </main>
+
+    <script>
+        function redirecionar(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+
+</body>
+</html>
