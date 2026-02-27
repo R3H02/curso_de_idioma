@@ -17,3 +17,8 @@ O projeto inclui as páginas principais do site, tais como:
 ✔️ Depoimentos  
 ✔️ Contato  
 ✔️ Outras páginas auxiliares  
+
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/R3H02/curso_de_idioma.git
