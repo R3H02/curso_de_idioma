@@ -21,4 +21,4 @@ O projeto inclui as páginas principais do site, tais como:
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/R3H02/curso_de_idioma.git
+   git clone https://r3h02.github.io/curso_de_idioma/
